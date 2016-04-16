@@ -1,0 +1,22 @@
+/** ****************************************************************************
+ * \file
+ * \brief      
+ * \author
+ * Year      | Name
+ * --------: | :------------
+ * 2016      | Mario S. Koenz
+ * \copyright  todo
+ ******************************************************************************/
+
+#include <iostream>
+#include <potential_pick.hpp>
+#include <fsc/ArgParser.hpp>
+
+int main(int argc, char * argv[]) {
+    fsc::ArgParser ap(argc, argv);
+    
+    if(ap.is_set("p") or ap.is_set("param"))
+        show_param();
+    
+    return 0;
+}

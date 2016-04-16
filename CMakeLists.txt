@@ -2,6 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 project("potential pick demo project")
 
 # ================ compiler
+SET(CMAKE_CXX_COMPILER "g++")
 set(CMAKE_CXX_FLAGS "-std=c++14 -Wall -Wextra -Wpedantic")
 
 set(SRC ${PROJECT_SOURCE_DIR}/src)

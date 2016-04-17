@@ -17,6 +17,8 @@ int main(int argc, char * argv[]) {
     
     if(ap.is_set("p") or ap.is_set("param"))
         show_param();
+    else
+        std::cout << "no information to show" << std::endl;
     
     return 0;
 }
